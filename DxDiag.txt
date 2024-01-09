@@ -1,7 +1,7 @@
 ------------------
 System Information
 ------------------
-      Time of this report: 1/7/2024, 02:19:55
+      Time of this report: 1/9/2024, 12:35:45
              Machine name: NICOLAS
                Machine Id: {CF3D2348-E227-438D-B035-A26A7AE94E9F}
          Operating System: Windows 11 Pro 64-bit (10.0, Build 22621) (22621.ni_release.220506-1250)
@@ -12,7 +12,7 @@ System Information
                 Processor: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz (12 CPUs), ~2.9GHz
                    Memory: 16384MB RAM
       Available OS Memory: 16256MB RAM
-                Page File: 13520MB used, 7854MB available
+                Page File: 15627MB used, 4468MB available
               Windows Dir: C:\Windows
           DirectX Version: DirectX 12
       DX Setup Parameters: Not found
@@ -149,13 +149,13 @@ Display Pixel Format: DISPLAYCONFIG_PIXELFORMAT_32BPP
         DDraw Status: Enabled
           D3D Status: Enabled
           AGP Status: Enabled
-       MPO MaxPlanes: 4
-            MPO Caps: RGB,YUV,BILINEAR,HIGH_FILTER,STRETCH_YUV,STRETCH_RGB,IMMEDIATE,HDR (MPO3)
-         MPO Stretch: 10.000X - 0.500X
-     MPO Media Hints: resizing, colorspace Conversion 
-         MPO Formats: NV12,P010,YUY2,R16G16B16A16_FLOAT,R10G10B10A2_UNORM,R8G8B8A8_UNORM,B8G8R8A8_UNORM
-    PanelFitter Caps: RGB,YUV,BILINEAR,HIGH_FILTER,STRETCH_YUV,STRETCH_RGB,IMMEDIATE,HDR (MPO3)
- PanelFitter Stretch: 10.000X - 0.500X
+       MPO MaxPlanes: 1
+            MPO Caps: Not Supported
+         MPO Stretch: Not Supported
+     MPO Media Hints: Not Supported
+         MPO Formats: Not Supported
+    PanelFitter Caps: Not Supported
+ PanelFitter Stretch: Not Supported
 
            Card name: NVIDIA GeForce RTX 3050
         Manufacturer: NVIDIA
@@ -258,13 +258,13 @@ Display Pixel Format: DISPLAYCONFIG_PIXELFORMAT_32BPP
         DDraw Status: Enabled
           D3D Status: Enabled
           AGP Status: Enabled
-       MPO MaxPlanes: 1
-            MPO Caps: Not Supported
-         MPO Stretch: Not Supported
-     MPO Media Hints: Not Supported
-         MPO Formats: Not Supported
-    PanelFitter Caps: Not Supported
- PanelFitter Stretch: Not Supported
+       MPO MaxPlanes: 4
+            MPO Caps: RGB,YUV,BILINEAR,HIGH_FILTER,STRETCH_YUV,STRETCH_RGB,IMMEDIATE,HDR (MPO3)
+         MPO Stretch: 10.000X - 0.500X
+     MPO Media Hints: resizing, colorspace Conversion 
+         MPO Formats: NV12,P010,YUY2,R16G16B16A16_FLOAT,R10G10B10A2_UNORM,R8G8B8A8_UNORM,B8G8R8A8_UNORM
+    PanelFitter Caps: RGB,YUV,BILINEAR,HIGH_FILTER,STRETCH_YUV,STRETCH_RGB,IMMEDIATE,HDR (MPO3)
+ PanelFitter Stretch: 10.000X - 0.500X
 
 -------------
 Sound Devices
@@ -605,7 +605,7 @@ PS/2 Devices
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 88.8 GB
+ Free Space: 95.0 GB
 Total Space: 243.4 GB
 File System: NTFS
       Model: Pichau Gaming PG256X
@@ -623,7 +623,7 @@ File System: NTFS
       Model: ST500LM012 HN-M500MBB
 
       Drive: F:
- Free Space: 829.5 GB
+ Free Space: 828.4 GB
 Total Space: 1953.5 GB
 File System: NTFS
       Model: XrayDisk 2TB SSD
@@ -1482,20 +1482,20 @@ Diagnostics
 
 Windows Error Reporting:
 +++ WER0 +++:
-Fault bucket 1745213948057624195, type 4
+Fault bucket 1785293488592413699, type 4
 Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: SolarlandClient-Win64-Shipping.exe
-P2: 4.25.3.0
-P3: 00000000
-P4: ntdll.dll
-P5: 10.0.22621.2506
-P6: bced4b82
+P1: Explorer.EXE
+P2: 10.0.22621.2792
+P3: fbda1990
+P4: Windows.UI.Xaml.dll
+P5: 10.0.22621.2861
+P6: a6d20322
 P7: c0000005
-P8: 0000000000033aca
+P8: 00000000003106af
 P9: 
 P10: 
 
@@ -1507,14 +1507,14 @@ Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: SolarlandClient-Win64-Shipping.exe
-P2: 4.25.3.0
-P3: 00000000
-P4: ntdll.dll
-P5: 10.0.22621.2506
-P6: bced4b82
+P1: Explorer.EXE
+P2: 10.0.22621.2792
+P3: fbda1990
+P4: Windows.UI.Xaml.dll
+P5: 10.0.22621.2861
+P6: a6d20322
 P7: c0000005
-P8: 0000000000033aca
+P8: 00000000003106af
 P9: 
 P10: 
 
@@ -1558,40 +1558,40 @@ P10:
 
 
 +++ WER4 +++:
-Fault bucket 1409605930106188688, type 5
-Event Name: MoAppCrash
+Fault bucket 1745213948057624195, type 4
+Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: DellInc.AlienwareCommandCenter_5.5.51.0_x64__htrsf667h5kn2
-P2: praid:App
-P3: 5.5.51.0
-P4: 64d0c6a0
-P5: combase.dll
-P6: 10.0.22621.2792
-P7: d9671289
-P8: 80004003
-P9: 000000000008fa43
+P1: SolarlandClient-Win64-Shipping.exe
+P2: 4.25.3.0
+P3: 00000000
+P4: ntdll.dll
+P5: 10.0.22621.2506
+P6: bced4b82
+P7: c0000005
+P8: 0000000000033aca
+P9: 
 P10: 
 
 
 +++ WER5 +++:
 Fault bucket , type 0
-Event Name: MoAppCrash
+Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: DellInc.AlienwareCommandCenter_5.5.51.0_x64__htrsf667h5kn2
-P2: praid:App
-P3: 5.5.51.0
-P4: 64d0c6a0
-P5: combase.dll
-P6: 10.0.22621.2792
-P7: d9671289
-P8: 80004003
-P9: 000000000008fa43
+P1: SolarlandClient-Win64-Shipping.exe
+P2: 4.25.3.0
+P3: 00000000
+P4: ntdll.dll
+P5: 10.0.22621.2506
+P6: bced4b82
+P7: c0000005
+P8: 0000000000033aca
+P9: 
 P10: 
 
 
@@ -1634,39 +1634,39 @@ P10:
 
 
 +++ WER8 +++:
-Fault bucket 1785293488592413699, type 4
-Event Name: APPCRASH
+Fault bucket 2247830354341346522, type 5
+Event Name: RADAR_PRE_LEAK_64
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Explorer.EXE
-P2: 10.0.22621.2792
-P3: fbda1990
-P4: Windows.UI.Xaml.dll
-P5: 10.0.22621.2861
-P6: a6d20322
-P7: c0000005
-P8: 00000000003106af
+P1: Disney_Speedstorm_x64_rtl.exe
+P2: 0.0.0.0
+P3: 10.0.22621.2.0.0
+P4: 
+P5: 
+P6: 
+P7: 
+P8: 
 P9: 
 P10: 
 
 
 +++ WER9 +++:
-Fault bucket , type 0
-Event Name: APPCRASH
+Fault bucket 1902275774066731141, type 5
+Event Name: RADAR_PRE_LEAK_WOW64
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Explorer.EXE
-P2: 10.0.22621.2792
-P3: fbda1990
-P4: Windows.UI.Xaml.dll
-P5: 10.0.22621.2861
-P6: a6d20322
-P7: c0000005
-P8: 00000000003106af
+P1: Discord.exe
+P2: 1.0.9028.0
+P3: 10.0.22621.2.0.0
+P4: 
+P5: 
+P6: 
+P7: 
+P8: 
 P9: 
 P10: 
 
